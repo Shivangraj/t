@@ -15,7 +15,7 @@ readTimeout: 10s
 writeTimeout: 10s
 # Number of read buffers.
 # A higher value allows a wider throughput, a lower value allows to save RAM.
-readBufferCount: 5120
+readBufferCount: 1024
 # Maximum size of payload of outgoing UDP packets.
 # This can be decreased to avoid fragmentation on networks with a low UDP MTU.
 udpMaxPayloadSize: 1472
@@ -429,3 +429,9 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
+  Door:
+    runOnInit: ffmpeg -re -i "rtsp://admin:Protection1@192.168.51.110:554/h264_2" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.25.9.14:8554/MonroeDoor" 
+    runOnInitRestart: yes
+  OE-9981b:
+    runOnInit: ffmpeg -re -i "rtsp://admin:Protection1@192.168.51.104/media/video2" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.25.9.14:8554/MonroeOE-9981b" 
+    runOnInitRestart: yes
