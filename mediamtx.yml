@@ -76,19 +76,19 @@ protocols: [tcp]
 # Available values are "no", "strict", "optional".
 encryption: "no"
 # Address of the TCP/RTSP listener. This is needed only when encryption is "no" or "optional".
-rtspAddress: :8554
+rtspAddress: :8544
 # Address of the TCP/TLS/RTSPS listener. This is needed only when encryption is "strict" or "optional".
-rtspsAddress: :8322
+rtspsAddress: :8332
 # Address of the UDP/RTP listener. This is needed only when "udp" is in protocols.
-rtpAddress: :8000
+rtpAddress: :8010
 # Address of the UDP/RTCP listener. This is needed only when "udp" is in protocols.
-rtcpAddress: :8001
+rtcpAddress: :8011
 # IP range of all UDP-multicast listeners. This is needed only when "multicast" is in protocols.
 multicastIPRange: 224.1.0.0/16
 # Port of all UDP-multicast/RTP listeners. This is needed only when "multicast" is in protocols.
-multicastRTPPort: 8002
+multicastRTPPort: 8012
 # Port of all UDP-multicast/RTCP listeners. This is needed only when "multicast" is in protocols.
-multicastRTCPPort: 8003
+multicastRTCPPort: 8013
 # Path to the server key. This is needed only when encryption is "strict" or "optional".
 # This can be generated with:
 # openssl genrsa -out server.key 2048
@@ -103,7 +103,7 @@ authMethods: [basic, digest]
 # RTMP parameters
 
 # Disable support for the RTMP protocol.
-rtmpDisable: no
+rtmpDisable: yes
 # Address of the RTMP listener. This is needed only when encryption is "no" or "optional".
 rtmpAddress: :1935
 # Encrypt connections with TLS (RTMPS).
@@ -179,7 +179,7 @@ hlsDirectory: ''
 # WebRTC parameters
 
 # Disable support for the WebRTC protocol.
-webrtcDisable: no
+webrtcDisable: yes
 # Address of the WebRTC listener.
 webrtcAddress: :8889
 # Enable TLS/HTTPS on the WebRTC server.
@@ -429,12 +429,24 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
-  UHDOOR:
-    runOnInit: ffmpeg -re -i "rtsp://admin:Protection1@192.168.51.110:554/profile3/media.smp" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.25.9.14:8554/UHDOOR" 
+  Door:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/6a524b5c-20d3-4b8a-acb4-8f74699dee74/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Door" 
     runOnInitRestart: yes
-  UHRegisters:
-    runOnInit: ffmpeg -re -i "rtsp://admin:Protection1@192.168.51.103/media/video2" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.25.9.14:8554/UHRegisters" 
+  Hallway11:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/8aa1fe52-bc42-4c0c-978c-db945e5123b9/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway11" 
     runOnInitRestart: yes
-  UHEntry:
-    runOnInit: ffmpeg -re -i "rtsp://admin:Protection1@192.168.51.101/media/video2" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.25.9.14:8554/UHEntry" 
+  Counter11:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/51418c59-7aff-4cbd-8b49-eb672ad6dc91/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Counter11" 
+    runOnInitRestart: yes
+  Counter12:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/ca5984db-6272-48ed-a46c-a1e2409bf69c/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Counter12" 
+    runOnInitRestart: yes
+  Hallway12:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/820c3640-28d2-48db-8327-6c5edbe07734/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway12" 
+    runOnInitRestart: yes
+  Hallway13:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/0b65320f-94a9-4980-895c-eff8f3b6439a/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway13" 
+    runOnInitRestart: yes
+  Aisle:
+    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/c9dd4bd9-a063-4040-8198-f1f93b1c8960/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Aisle" 
     runOnInitRestart: yes
