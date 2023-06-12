@@ -429,24 +429,12 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
-  Door:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/6a524b5c-20d3-4b8a-acb4-8f74699dee74/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Door" 
+ wab1245e11:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.111:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245e11"
     runOnInitRestart: yes
-  Hallway11:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/8aa1fe52-bc42-4c0c-978c-db945e5123b9/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway11" 
+  wab1245m25:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.125:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245m25"
     runOnInitRestart: yes
-  Counter11:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/51418c59-7aff-4cbd-8b49-eb672ad6dc91/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Counter11" 
-    runOnInitRestart: yes
-  Counter12:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/ca5984db-6272-48ed-a46c-a1e2409bf69c/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Counter12" 
-    runOnInitRestart: yes
-  Hallway12:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/820c3640-28d2-48db-8327-6c5edbe07734/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway12" 
-    runOnInitRestart: yes
-  Hallway13:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/0b65320f-94a9-4980-895c-eff8f3b6439a/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Hallway13" 
-    runOnInitRestart: yes
-  Aisle:
-    runOnInit: ffmpeg -re -i "https://npowers%40openeye.net..Z6W2JH:%24upp0rt%21%21@ows.openeye.net/api/device/login/Z6V2GK?v=2&rhttpp=/stream/mp4/c9dd4bd9-a063-4040-8198-f1f93b1c8960/medium/stream.mp4?time=now" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8544/Aisle" 
+  wab1245p3:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.103:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245p3"
     runOnInitRestart: yes
