@@ -429,12 +429,12 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
- wab1245e11:
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.111:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245e11"
+  slittertdv:
+    runOnInit: ffmpeg -re -i "https://avery:Wobotavery7468ai@averystream.wobotintelligence.com/slittertdv/stream.m3u8" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/slittertdv"
     runOnInitRestart: yes
-  wab1245m25:
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.125:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245m25"
+  slittertmo:
+    runOnInit: ffmpeg -re -i "https://avery:Wobotavery7468ai@averystream.wobotintelligence.com/slittertmo/stream.m3u8" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/slittertmo"
     runOnInitRestart: yes
-  wab1245p3:
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.103:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/wab1245p3"
+  lobby:
+    runOnInit: ffmpeg -re -i "https://avery:Wobotavery7468ai@averystream.wobotintelligence.com/lobby/stream.m3u8" -c copy -an -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/lobby"
     runOnInitRestart: yes
