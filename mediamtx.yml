@@ -76,7 +76,7 @@ protocols: [tcp]
 # Available values are "no", "strict", "optional".
 encryption: "no"
 # Address of the TCP/RTSP listener. This is needed only when encryption is "no" or "optional".
-rtspAddress: :8543
+rtspAddress: :8553
 # Address of the TCP/TLS/RTSPS listener. This is needed only when encryption is "strict" or "optional".
 rtspsAddress: :8332
 # Address of the UDP/RTP listener. This is needed only when "udp" is in protocols.
@@ -429,10 +429,13 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
-  wab1332e11:
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.123:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab828e18"
+  wab0839entry:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:1234@192.168.0.111:554/h264_2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab0839entry"
     runOnInitRestart: yes
-  wab1332p3:
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.103:554/h264_2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab1282p3"
+  wab0839menu:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.123:554/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab0839menu"
+    runOnInitRestart: yes
+  wab0839pickup:
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco%40_3123@192.168.0.103:554/h264_2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab0839pickup"
     runOnInitRestart: yes
 
