@@ -430,9 +430,9 @@ paths:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
   wab1211m19:                                                                                                                                                           
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco1234%21@192.168.0.106/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab1211m19"
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco1234%21@192.168.0.123/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab1275m23"
     runOnInitRestart: yes                                                                                                                                               
   wab1211p3:                                                                                                                                                            
-    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco1234%21@192.168.0.103/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab1211p3"
+    runOnInit: ffmpeg -rtsp_transport tcp -re -nostats -i "rtsp://admin:Navco1234%21@192.168.0.103/media/video2" -c:v copy -an -rtsp_transport tcp -f rtsp "rtsp://localhost:8553/wab1275p3"
     runOnInitRestart: yes
 
