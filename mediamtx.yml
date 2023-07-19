@@ -429,9 +429,12 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
-  wab1211m19:
-    source: rtsp://admin:Navco1234%21@192.168.0.106/media/video2
+  wab1245e11:
+    source: rtsp://admin:Navco%40_3123@192.168.0.111:554/media/video2
     sourceProtocol: tcp
-  wab1211p3:
-    source: rtsp://admin:Navco1234%21@192.168.0.103/media/video2
+  wab1245m25:
+    source: rtsp://admin:Navco%40_3123@192.168.0.125:554/media/video2
+    sourceProtocol: TCP
+  wab1245p3:
+    source: rtsp://admin:Navco%40_3123@192.168.0.103:554/media/video2
     sourceProtocol: tcp
