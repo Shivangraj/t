@@ -434,7 +434,7 @@ paths:
     sourceProtocol: tcp
   wab1245m25:
     source: rtsp://admin:Navco%40_3123@192.168.0.125:554/media/video2
-    sourceProtocol: TCP
+    sourceProtocol: tcp
   wab1245p3:
     source: rtsp://admin:Navco%40_3123@192.168.0.103:554/media/video2
     sourceProtocol: tcp
