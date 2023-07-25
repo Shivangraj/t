@@ -15,7 +15,7 @@ readTimeout: 10s
 writeTimeout: 10s
 # Number of read buffers.
 # A higher value allows a wider throughput, a lower value allows to save RAM.
-readBufferCount: 2048
+readBufferCount: 6144
 # Maximum size of payload of outgoing UDP packets.
 # This can be decreased to avoid fragmentation on networks with a low UDP MTU.
 udpMaxPayloadSize: 1472
@@ -76,7 +76,7 @@ protocols: [tcp]
 # Available values are "no", "strict", "optional".
 encryption: "no"
 # Address of the TCP/RTSP listener. This is needed only when encryption is "no" or "optional".
-rtspAddress: :8553
+rtspAddress: :8554
 # Address of the TCP/TLS/RTSPS listener. This is needed only when encryption is "strict" or "optional".
 rtspsAddress: :8332
 # Address of the UDP/RTP listener. This is needed only when "udp" is in protocols.
@@ -430,17 +430,17 @@ paths:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
   wab1180p3:
-    source: rtsp://admin:Navco%40_3123@192.168.0.103:554/h264_2
+    source: rtsp://remoteclients.wobot.ai:22280/wab1180p3
     sourceProtocol: tcp
   wab1180m23:
-    source: rtsp://admin:Navco%40_3123@192.168.0.123:554/media/video2
+    source: rtsp://remoteclients.wobot.ai:22280/wab1180m23
     sourceProtocol: tcp
   wab1180e24:
-    source: rtsp://admin:Navco%40_3123@192.168.0.124:554/media/video2
+    source: rtsp://remoteclients.wobot.ai:22280/wab1180e24
     sourceProtocol: tcp
   wab1180p18:
-    source: rtsp://admin:Navco%40_3123@192.168.0.118:554/media/video2
+    source: rtsp://remoteclients.wobot.ai:22280/wab1180p18
     sourceProtocol: tcp
   wab1180p11:
-    source: rtsp://admin:Navco%40_3123@192.168.0.111:554/media/video2
+    source: rtsp://remoteclients.wobot.ai:22280/wab1180p11
     sourceProtocol: tcp
