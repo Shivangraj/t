@@ -429,21 +429,24 @@ paths:
     runOnRead:
     # Restart the command if it exits suddenly.
     runOnReadRestart: no
-  McdRegister:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6WY29?v=2&rhttpp=/stream/mp4/6ccbd060-8797-4911-8107-fd28b9e07e54/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdRegister"
+  Bay1Camera:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6WNMJ:Testlab1%21%40ows.openeye.net/api/device/login/Z6WSYM?v=2&rhttpp=/stream/mp4/e963e0e0-1e08-4480-901a-92b5098de6bf/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/Bay1Camera"
     runOnInitRestart: yes
-  McdFE:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6WY29?v=2&rhttpp=/stream/mp4/bc8c00d4-8ac5-4af9-b109-7d5bdcb53d35/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdFE"
+  EntranceCamera:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/635a2b88-d9d5-4946-ab39-0db340fdca91/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/EntranceCamera"
     runOnInitRestart: yes
-  McdDining:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6WY29?v=2&rhttpp=/stream/mp4/2055d214-556d-4afd-acf7-682713de3fd2/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdDiningr"
+  ExteriorBay2:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/5f1a952e-57ac-437f-b064-9222bc1fcdc5/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/ExteriorBay2"
     runOnInitRestart: yes
-  McdRWA:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6X0OR?v=2&rhttpp=/stream/mp4/647ba222-0af6-4621-862e-15a422ec7dba/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdRWA"
+  Bay3Camera:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/5ad3324c-adc5-4344-bd40-e45dd990bd09/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/Bay3Camera"
     runOnInitRestart: yes
-  McdMDA:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6X0OR?v=2&rhttpp=/stream/mp4/b8125585-0566-40e5-b243-3fe0260ceeb4/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdMDA"
+  Bay2Camera:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/3b5123ac-1b08-4b02-948b-153c19338203/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/Bay2Camera"
     runOnInitRestart: yes
-  McdFC:
-    runOnInit: ffmpeg -re -nostats -i "https://npowers@openeye.net..Z6WFQ1:Supp0rt%21%24upp0rt%21@ows.openeye.net/api/device/login/Z6X0OR?v=2&rhttpp=/stream/mp4/fb9fc118-fa3a-47c6-b91d-a9de174c0bb7/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/McdFC"
+  ExteriorBay3:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/16801189-7824-444e-be58-4f7362b142f7/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/ExteriorBay3"
+    runOnInitRestart: yes
+  ExteriorBay1:
+    runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot%40outlook.com..Z6W7RA:Testlab1%21%40ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/14726811-d770-40c6-b00b-9e2e2478c255/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/ExteriorBay1"
     runOnInitRestart: yes
