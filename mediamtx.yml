@@ -440,7 +440,7 @@ paths:
     runOnInitRestart: yes
   Bay3Camera:
     runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot@outlook.com..Z6W7RA:Testlab1%21@ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/5ad3324c-adc5-4344-bd40-e45dd990bd09/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/Bay3Camera"
-    runOnInitRestart: ye
+    runOnInitRestart: yes
   Bay2Camera:
     runOnInit: ffmpeg -re -nostats -i "https://Wobot.pilot@outlook.com..Z6W7RA:Testlab1%21@ows.openeye.net/api/device/login/Z6V4U7?v=2&rhttpp=/stream/mp4/3b5123ac-1b08-4b02-948b-153c19338203/medium/stream.mp4?time=now" -codec:v copy -rtsp_transport tcp -f rtsp "rtsp://20.127.29.139:8554/take5/Bay2Camera"
     runOnInitRestart: yes
